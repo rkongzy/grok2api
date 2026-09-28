@@ -464,6 +464,7 @@ func webProviderConfig(cfg config.Config) webprovider.Config {
 		AllowNSFW:            cfg.Provider.Web.AllowNSFW,
 		FreeVideoDurationCap: cfg.Provider.Web.FreeVideoDurationCap,
 		VideoNodeSpacing:     cfg.Provider.Web.VideoNodeSpacing.Value(),
+		VideoNodeConcurrency: cfg.Provider.Web.VideoNodeConcurrency,
 	}
 }
 
